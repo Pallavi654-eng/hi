@@ -1,0 +1,99 @@
+<!--
+
+forms are used as login page/registration/signup as asking details from user
+it is created in tag form
+action is used when we apply php is applied or link to other page that link is to be mentioned in action
+in label tag we have to write like enter username or instructions
+
+eg- <label for="username">EnterName</label>
+<input type="test" id="username">  
+REMEMBER:  for of label should be same as id for particular bod
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- by default method is get and in it we can't send private information  -->
+    <!-- in post method we can share private information bcz it will not be visible on url -->
+    <form action="" method="post">
+        <!-- name mein number kaise enter kr paa rhe?? -->
+        <label for="uname">Enter Name</label>
+        <input type ="text" name="name" id="uname" size="50" maxlength="7" placeholder="Enter name:"  required>
+        <!-- placeholder is the water mark when writing it get removed -->
+
+            <br></br>
+        <label for="pass">Enter password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter the password" required>
+
+        <br><br>
+
+        <label for="email">Enter your email</label>
+        <input type="Email" name="emailId" id="email" placeholder ="Enter your email" required>
+
+        <br></br>
+        <input type="submit" name="submitform" id="submitform" value="Submit Form">
+        <input type="reset" name="resetform" id="resetform" value="Reset"><br>
+
+        <!-- text area is when we want multiple line box eg. feedback  and it is resizeable-->
+         <label for="review">Write a review:</label><br>
+         <textarea name="review" id="review" rows="20" cols="50">This is a good movie</textarea><br>
+         <!-- if we want anything will be written by default then we use value-->
+
+
+         <!-- in checkbox we can select multiple options to be selected by user eg: selecting hobby-->
+        <label for="hobby">Choose your hobby</label>
+        <!-- we will use value attribute for that whatever we want to submit on backend -->
+         <!-- checked is for if we want that the option should be selected by default -->
+        <input type="checkbox" name="hobby1" id="hobby" value="garden"  checked>Gardening
+        <input type="checkbox" name="hobby2" id="hobby" value="sing">singing
+        <input type="checkbox" name="hobby3" id="hobby" value ="dance">Dancing
+        
+        <br></br>
+        <label for="pro">Select your programme:</label>
+        <!-- if we want to click on text then also the option should be selected change id for next for value-->
+        <!-- <input type="radio" name="pro" id="pro" name="pro"> -->
+        <input type="radio" name="pro" id="btech" value="btech">
+        <label for="btech">B.Tech</label>
+        
+<!-- name attribute groups radio buttons together so that only one option can be selected at a time within that group. If multiple radio buttons share the same name value, the browser ensures that only one of them can be selected at any given time. -->
+
+        <input type="radio" name="pro" id="bca" value="bca">
+        <label for="bca">BCA</label>
+
+        <input type="radio" name="pro" id="bed" value="bed">
+        <label for="bed">B.Ed</label>
+    
+        <br>
+        <label for="statesel">Choose your state:</label>
+        <!-- The <select> element in code is a dropdown list that allows users to select one or more options -->
+    <select name="statesell" id="statesel" multiple>
+    <option value="choosestate">Choose your state</option>
+        <option value="punjab">Punjab</option>
+        <option value="raj" selected>Rajasthan</option>
+        <option value="sik">Sikkim</option>
+        <option value="ker">Kerala</option>
+
+    </select>
+        
+    <!-- option for choosing file from computer -->
+    <br>
+    <label for="filesel">Choose file:</label>
+    <input type="file" name="filesl" id="filesel">
+    <br>
+
+    <!-- if i want to add a image downloaded in my desktop -->
+    <input type="submit" name="submitform" id="submitform" value="Submit Form">
+    <!-- adding image and making submit button clickable with image -->
+    <input type="image" name="imgbtn" id="imgbtn" src="images\submit button.webp" width="90" height="70" >
+    <!-- <a href="https://www.shutterstock.com/image-vector/submit-button-260nw-287593547.jpg"></a> -->
+
+
+    </form>
+</body>
+</html>

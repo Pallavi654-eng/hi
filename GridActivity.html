@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            border: 10px solid green;
+            padding: 10px;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            /* grid-template-columns : 100% 100% 100%; */
+            width: 100%; 
+            height: 100%;
+             box-sizing: border-box;     /*include padding and border in dimension */
+        }
+        #h1, #h2{
+            
+            text-align: center;
+            grid-column: 1/ span 3;
+
+        }
+        .item{
+            border: 2px red dotted;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #h2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="h1"><h1>Coureses- SEM 4</h1></div>
+        <div class ="item" id="h2">INT-219
+            <div>
+                <figure>
+                    <img src="images\int219.webp" width="200" height="150"/>
+                    <figcaption>Front End Web Development</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class ="item" id="cse">CSE-320
+            <div>
+                <figure>
+                    <img src="images\cse320.webp" width="200" height ="150"/>
+                    <figcaption>a. PROGRAMMING IN JAVA</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class ="item" id="cse">CSE408
+            <div>
+                <figure>
+                    <img src="images\cse408.webp" width="170" height ="150"/>
+                    <figcaption>b. DESIGN AND ANALYSIS OF ALGORITHMS</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class ="item" id="cse">CSE 316
+            <div>
+                <figure>
+                    <img src="images\cse316.webp" width="200" height ="150"/>
+                    <figcaption>c.OPERATING SYSTEMS</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cellpadding is space between cells
+     cell spacing is difference between the cells
+     rowspan- 
+     colspan- instead of 1 column it should span in 2 colums
+     
+     we must use rowspan iin td and colspan in th
+     -->
+    <table border="4" cellpadding="5" cellspacing="7" bgcolor="blue-200" bordercolor="green">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th colspan="2">
+                    Course
+                </th>
+                <th>
+                    Marks
+                </th>
+            </tr>
+        </head>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Aman</td>
+                <td>Java</td>
+                <td>Advanced java</td>
+                <td rowspan="2">80</td>
+            </tr>
+            <tr>
+                <td>Html</td>
+                <td>CSS</td>
+            </tr>
+
+            <tr>
+                <td>Neeraj</td>
+                <td>C++</td>
+                <td>Practical</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>Ajay</td>
+                <td>Python</td>
+                <td>Python practical</td>
+                <td>87</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

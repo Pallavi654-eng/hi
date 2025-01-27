@@ -1,0 +1,99 @@
+ <!-- css - cascading style sheet
+inline
+internal - in head section we style
+external - separate file is created and we link that 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- use of external css -> this is linking  -->
+    <link rel="stylesheet" href="mystyle.css">
+
+                                <!-- selectors -->
+     <!-- type of selectors::
+    type selector
+    attribute selector
+    id selector
+    class selector
+    universal selector
+    pseudo selector
+    combinator selector  -->
+     <style>
+        /* type selector */
+        h3{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* attribute selector */
+        a[href="https://www.google.com/"]{
+            color: brown;
+            background-color: aquamarine;
+        }
+
+        /* id selector */
+        /* different elements can have same class but id is always uniquue */
+        #head1:hover{
+            font-family: 'Lucida Sans','Lucida Sans Regular';
+            color: purple
+        }
+        #head2{
+            color: grey;
+        }
+
+        /*class selector */
+        .c1{
+            color: blue;
+            background-color: pink;
+        }
+
+        /* universal selector */
+        /* pseudo selector -> want which link was active the change in color */
+
+        /* combinator selectoer -> more than 1 selectors we are using  */
+        .d1 p{
+            color: blanchedalmond;
+        }
+
+        /* group selector */
+        /*h4,h5,h6{
+            color: greenyellow;
+        }*/
+
+     </style>
+
+
+</head>
+<body>
+
+    
+    <h1 id="head1">Welcome to Front End Class</h1>
+    <h2 id="head2">Learning Advanced CSS and Javascript</h2>
+    <h3 >Learning Advanced CSS and Javascript</h3>
+    <h4 class="c1">Learning Advanced CSS and Javascript</h4>
+    <h5 class="c1">Learning Advanced CSS and Javascript</h5>
+    <h6 class="c1">Learning Advanced CSS and Javascript</h6>
+
+    <a href="https://www.google.com/">Visit Google</a>
+
+    <div class="d1"><p>This is new para</p></div>
+        <p>This is para</p>
+
+    <!-- inline css -->
+
+    <!-- <h1 style="color: green">Welcome to Front End Class</h1>
+    <h2 style="color: red">Learning od Advanced CSS and Javascript</h2>
+    <h3 style="color: blueviolet">Learning od Advanced CSS and Javascript</h3>
+    <h4>Learning Advanced CSS and Javascript</h4>
+    <h5>Learning Advanced CSS and Javascript</h5>
+    <h6>Learning Advanced CSS and Javascript</h6> -->
+
+
+
+</body>
+</html> 

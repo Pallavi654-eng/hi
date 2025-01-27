@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            border: 10px solid green;
+            padding: 10px;
+
+                            /* GRID PROPERTIES */
+
+            display: grid;
+            /* wants to devide grid in how many colums and rows then we use */
+           /* it will take colums of equal size as per screen by using auto auto  */
+           /* 50% means 2 colums will be of same size and third one will be half the size of screen */
+            
+           /* grid-template-columns: auto auto 50%; */
+
+           /* it will specify size of rows */
+            
+           /* grid-template-rows: 100px 250px; */
+
+
+
+            /* shorthand property for grid template for columns and rows */
+            grid-template: 100px 220px/30% auto auto;
+
+            /* grid-row-gap: 50px;
+            grid-column-gap: 30px; */
+
+            /* shorthand property */
+            grid-gap: 30px 40px;
+
+        }
+        .item{
+            background-color: antiquewhite;
+            border: 2px red solid;
+            padding: 10px;
+            font-size: larger;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            
+        }
+
+        #i3{
+            /* starting for 2nd row and spanning for 2 rows */
+
+            /* grid-row-start: 2; */
+            /* grid-row-end: span 2; */
+
+            /* if we do not use span if we just write 5 it means row should end before starting of fourth row */
+            
+            /* grid-row-end: 4; */
+
+            /* span 3 means 3 row it is covering */
+            /* grid-row: 2/span 3; */
+
+            /* 4 se pehle and starting from 2 */
+            grid-row: 2/4;
+
+
+        }
+
+
+        #i7{
+            /* grid-column-start: 3;
+            grid-column-end: span 2; */
+
+            /* grid-column-end: 3; */
+
+            /* shorthand property */
+            grid-column: 3/span 3;
+        }
+
+
+        #i9{
+            /* should start from 4th row 3rd column */
+            /* grid-row-start: 4;
+            grid-row-end: 1;
+            grid-column-start: 3;
+            grid-column-end: span 2; */
+
+            /* shorthand property */
+            /* it is rs/cs/re/ce */
+            grid-area: 4/3/span 1/span 2 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item" id="i7">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item" id="i9">Item9</div>
+        <div class="item" >Item10</div>
+
+
+    </div>
+</body>
+</html>
