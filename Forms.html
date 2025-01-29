@@ -28,6 +28,22 @@ REMEMBER:  for of label should be same as id for particular bod
         <!-- placeholder is the water mark when writing it get removed -->
 
             <br></br>
+
+        <!-- 
+        type: Specifies the type of input (e.g., text, password, number, email, etc.)
+        name: Defines the name of the input, which is used when sending form data.
+        id: A unique identifier for the input element.
+        placeholder: Provides a hint or short description within the input field.
+        size: Specifies the visible width of the input field (in characters).
+        value: Sets the initial value of the input field (useful for pre-filled fields).
+        required: Marks the field as required for form submission (a boolean attribute
+        maxlength: Specifies the maximum number of characters allowed in the input field.
+        pattern: Defines a regular expression that the input must match to be considered valid (mostly used for text or email fields).
+        multiple: Allows multiple values to be selected
+
+        -->
+
+
         <label for="pass">Enter password</label>
         <input type="password" name="pass" id="pass" placeholder="Enter the password" required>
 
@@ -40,6 +56,20 @@ REMEMBER:  for of label should be same as id for particular bod
         <input type="submit" name="submitform" id="submitform" value="Submit Form">
         <input type="reset" name="resetform" id="resetform" value="Reset"><br>
 
+
+        <!-- textarea properties:
+         name: Specifies the name of the textarea, used when sending form data.
+        id: A unique identifier for the textarea element.
+        placeholder: Provides a hint or description within the textarea.
+        rows: Defines the number of visible text lines (rows) in the textarea.
+        cols: Specifies the visible width of the textarea in characters.
+        maxlength: Limits the number of characters that can be entered.
+        readonly: Makes the textarea non-editable, though the value can still be selected and copied.
+        disabled: Disables the textarea, preventing interaction.
+        required: Marks the textarea as required for form submission.
+        autofocus: Automatically focuses the textarea when the page loads.
+        -->
+        
         <!-- text area is when we want multiple line box eg. feedback  and it is resizeable-->
          <label for="review">Write a review:</label><br>
          <textarea name="review" id="review" rows="20" cols="50">This is a good movie</textarea><br>

@@ -8,13 +8,25 @@
     <style>
         .container{
             background-color: blanchedalmond;
+            /* 
+            TYPES OF BORDER STYLE
+            border-style: solid
+            border-style: dotted
+            border-style: dashed
+            border-style: double
+            border-style: groove
+            border-style: ridge
+            border-style: inset
+            border-style: outset
+            border-style: hidden
+             */
             border: 10px solid green;
             padding: 10px;
 
                             /* GRID PROPERTIES */
 
             display: grid;
-            /* wants to devide grid in how many colums and rows then we use */
+            /* wants to divide grid in how many colums and rows then we use */
            /* it will take colums of equal size as per screen by using auto auto  */
            /* 50% means 2 colums will be of same size and third one will be half the size of screen */
             
@@ -26,13 +38,15 @@
 
 
 
-            /* shorthand property for grid template for columns and rows */
+            /* shorthand property for grid template for columns and rows 
+            grid-template: rows / columns    */
             grid-template: 100px 220px/30% auto auto;
+
 
             /* grid-row-gap: 50px;
             grid-column-gap: 30px; */
 
-            /* shorthand property */
+            /* shorthand property       grid-gap: (gap between rows)  (gap between columns)*/
             grid-gap: 30px 40px;
 
         }
@@ -51,14 +65,29 @@
             /* grid-row-start: 2; */
             /* grid-row-end: span 2; */
 
-            /* if we do not use span if we just write 5 it means row should end before starting of fourth row */
-            
-            /* grid-row-end: 4; */
 
-            /* span 3 means 3 row it is covering */
-            /* grid-row: 2/span 3; */
 
-            /* 4 se pehle and starting from 2 */
+            /*    grid-row: <start-line> / <end-line>;
+            1) Specifying Both Start and End
+
+                grid-row: 2 / 4;
+                Starts at row line 2.
+                Ends at row line 4 (not included).
+
+            2)Specifying Only Start (Defaults End to auto)
+
+                grid-row: 2;
+                Starts at row line 2.
+                Ends automatically based on content size.
+
+            3) Using span Keyword
+
+                grid-row: 2 / span 3;
+                Starts at row line 2.
+                Spans 3 rows (ends at line 5).
+                
+                */
+
             grid-row: 2/4;
 
 
@@ -68,8 +97,29 @@
         #i7{
             /* grid-column-start: 3;
             grid-column-end: span 2; */
-
             /* grid-column-end: 3; */
+
+            /* grid-column: <start-line> / <end-line>;
+            1) Specifying Both Start and End
+            
+             grid-column: 2 / 4;
+             Starts at column line 2.
+             Ends at column line 4 (not included).
+
+            2) Specifying Only Start (Defaults End to auto)
+
+             grid-column: 2;
+             Starts at column line 2.
+             Ends automatically based on the content size.
+
+            3) Using the span Keyword
+
+             grid-column: 1 / span 3;
+             Starts at column line 1.
+             Spans 3 columns.
+                
+                
+                */
 
             /* shorthand property */
             grid-column: 3/span 3;
@@ -84,7 +134,8 @@
             grid-column-end: span 2; */
 
             /* shorthand property */
-            /* it is rs/cs/re/ce */
+            /* it is rs/cs/re/ce 
+            grid-area: <row-start> / <column-start> / <row-end> / <column-end>; */
             grid-area: 4/3/span 1/span 2 ;
         }
     </style>
